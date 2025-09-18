@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Login Page</title>
+        <link href="css/style.css" rel="stylesheet">
+        <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white">
+
+  <header class="flex items-center justify-between px-6 py-4 border-b">
+    <a href="#">
+    <div class="flex items-center space-x-2 pl-12">
+            <img src="imgs/logo.png" alt="Logo" class="h-6 w-6">
+            <span class="font-semibold text-lg">RedSeam Clothing</span>
+    </div>
+</a>
+    <a href="#" class="flex items-center text-xl font-medium text-gray-800 hover:text-black pr-12">
+        <img src="imgs/placeholder.png" alt="Logo" class="h-7 w-6">
+      Log in
+    </a>
+  </header>
+
+  <main class="grid grid-cols-1 md:grid-cols-2 min-h-[calc(100vh-64px)]">
+    <div class="hidden md:block">
+      <img src="imgs/fash img.png" 
+           alt="Fashion" class="w-full h-full object-cover">
+    </div>
+
+    <div class="flex items-center justify-center p-8">
+      <div class="w-full max-w-md">
+        <h2 class="text-4xl font-bold mb-12">Log in</h2>
+
+        <form action="#" method="POST" class="space-y-8">
+            <div class="relative">
+                <input type="text" 
+                       required
+                       class="peer w-full rounded-md border border-gray-300 px-3 py-3 
+                              focus:outline-none focus:ring-2 focus:ring-orange-500
+                              placeholder-transparent" 
+                       placeholder="Email or username">
+              
+                <span class="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500 text-sm pointer-events-none 
+                             peer-placeholder-shown:opacity-100 peer-focus:opacity-0 opacity-0 transition">
+                  Email or username <span class="text-red-500">*</span>
+                </span>
+              </div>
+
+          <div>
+            <div class="relative">
+                <input type="password" 
+                       required
+                       class="peer w-full rounded-md border border-gray-300 px-3 py-3 pr-10
+                              focus:outline-none focus:ring-2 focus:ring-orange-500
+                              placeholder-transparent" 
+                       placeholder="Password">
+              
+                <span class="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500 text-sm pointer-events-none 
+                             peer-placeholder-shown:opacity-100 peer-focus:opacity-0 opacity-0 transition">
+                  Password <span class="text-red-500">*</span>
+                </span>
+              
+                <button type="button" 
+                        class="absolute inset-y-0 right-0 flex items-center pr-3 text-gray-400 hover:text-gray-600">
+                  👁
+                </button>
+              </div>
+          </div>
+          <button type="submit"
+                  class="w-full bg-orange-600 hover:bg-orange-700 text-white font-medium py-3 rounded-md transition">
+            Log in
+          </button>
+        </form>
+
+        <p class="mt-4 text-center text-sm text-gray-600">
+          Not a member?
+          <a href="#" class="text-orange-600 hover:underline">Register</a>
+        </p>
+      </div>
+    </div>
+  </main>
+
+</body>
+</html>
