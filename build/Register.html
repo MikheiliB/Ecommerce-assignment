@@ -1,90 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Login Page</title>
-        <link href="css/style.css" rel="stylesheet">
-        <script src="https://cdn.tailwindcss.com"></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Register - RedSeam Clothing</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-white">
 
+<body>
   <header class="flex items-center justify-between px-6 py-4 border-b">
     <a href="#">
-    <div class="flex items-center space-x-2 pl-12">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M13.5 16.875C13.5 17.1717 13.412 17.4617 13.2472 17.7084C13.0824 17.955 12.8481 18.1473 12.574 18.2608C12.2999 18.3744 11.9983 18.4041 11.7074 18.3462C11.4164 18.2883 11.1491 18.1454 10.9393 17.9357C10.7296 17.7259 10.5867 17.4586 10.5288 17.1676C10.4709 16.8767 10.5006 16.5751 10.6142 16.301C10.7277 16.0269 10.92 15.7926 11.1666 15.6278C11.4133 15.463 11.7033 15.375 12 15.375C12.3978 15.375 12.7794 15.533 13.0607 15.8143C13.342 16.0956 13.5 16.4772 13.5 16.875ZM20.25 9.75V14.25C20.25 16.438 19.3808 18.5365 17.8336 20.0836C16.2865 21.6308 14.188 22.5 12 22.5C9.81196 22.5 7.71354 21.6308 6.16637 20.0836C4.61919 18.5365 3.75 16.438 3.75 14.25V6C3.75 5.60218 3.90804 5.22064 4.18934 4.93934C4.47064 4.65804 4.85218 4.5 5.25 4.5C5.64782 4.5 6.02936 4.65804 6.31066 4.93934C6.59196 5.22064 6.75 5.60218 6.75 6V11.25C6.75 11.4489 6.82902 11.6397 6.96967 11.7803C7.11032 11.921 7.30109 12 7.5 12C7.69891 12 7.88968 11.921 8.03033 11.7803C8.17098 11.6397 8.25 11.4489 8.25 11.25V3C8.25 2.60218 8.40804 2.22064 8.68934 1.93934C8.97064 1.65804 9.35218 1.5 9.75 1.5C10.1478 1.5 10.5294 1.65804 10.8107 1.93934C11.092 2.22064 11.25 2.60218 11.25 3V10.5C11.25 10.6989 11.329 10.8897 11.4697 11.0303C11.6103 11.171 11.8011 11.25 12 11.25C12.1989 11.25 12.3897 11.171 12.5303 11.0303C12.671 10.8897 12.75 10.6989 12.75 10.5V4.5C12.75 4.10218 12.908 3.72064 13.1893 3.43934C13.4706 3.15804 13.8522 3 14.25 3C14.6478 3 15.0294 3.15804 15.3107 3.43934C15.592 3.72064 15.75 4.10218 15.75 4.5V12C15.75 12.1989 15.829 12.3897 15.9697 12.5303C16.1103 12.671 16.3011 12.75 16.5 12.75C16.6989 12.75 16.8897 12.671 17.0303 12.5303C17.171 12.3897 17.25 12.1989 17.25 12V9.75C17.25 9.35218 17.408 8.97064 17.6893 8.68934C17.9706 8.40804 18.3522 8.25 18.75 8.25C19.1478 8.25 19.5294 8.40804 19.8107 8.68934C20.092 8.97064 20.25 9.35218 20.25 9.75ZM16.8356 16.7072C16.77 16.5759 15.195 13.5 12 13.5C8.805 13.5 7.23 16.5759 7.16437 16.7072C7.1383 16.7593 7.12473 16.8167 7.12473 16.875C7.12473 16.9333 7.1383 16.9907 7.16437 17.0428C7.23 17.1741 8.805 20.25 12 20.25C15.195 20.25 16.77 17.1741 16.8356 17.0428C16.8617 16.9907 16.8753 16.9333 16.8753 16.875C16.8753 16.8167 16.8617 16.7593 16.8356 16.7072Z" fill="#FF4000"/>
-            </svg>
-            <span class="font-semibold text-lg">RedSeam Clothing</span>
-    </div>
-</a>
+      <div class="flex items-center space-x-2 pl-12">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M13.5 16.875C13.5 17.1717 13.412 17.4617 13.2472 17.7084C13.0824 17.955 12.8481 18.1473 12.574 18.2608C12.2999 18.3744 11.9983 18.4041 11.7074 18.3462C11.4164 18.2883 11.1491 18.1454 10.9393 17.9357C10.7296 17.7259 10.5867 17.4586 10.5288 17.1676C10.4709 16.8767 10.5006 16.5751 10.6142 16.301C10.7277 16.0269 10.92 15.7926 11.1666 15.6278C11.4133 15.463 11.7033 15.375 12 15.375C12.3978 15.375 12.7794 15.533 13.0607 15.8143C13.342 16.0956 13.5 16.4772 13.5 16.875ZM20.25 9.75V14.25C20.25 16.438 19.3808 18.5365 17.8336 20.0836C16.2865 21.6308 14.188 22.5 12 22.5C9.81196 22.5 7.71354 21.6308 6.16637 20.0836C4.61919 18.5365 3.75 16.438 3.75 14.25V6C3.75 5.60218 3.90804 5.22064 4.18934 4.93934C4.47064 4.65804 4.85218 4.5 5.25 4.5C5.64782 4.5 6.02936 4.65804 6.31066 4.93934C6.59196 5.22064 6.75 5.60218 6.75 6V11.25C6.75 11.4489 6.82902 11.6397 6.96967 11.7803C7.11032 11.921 7.30109 12 7.5 12C7.69891 12 7.88968 11.921 8.03033 11.7803C8.17098 11.6397 8.25 11.4489 8.25 11.25V3C8.25 2.60218 8.40804 2.22064 8.68934 1.93934C8.97064 1.65804 9.35218 1.5 9.75 1.5C10.1478 1.5 10.5294 1.65804 10.8107 1.93934C11.092 2.22064 11.25 2.60218 11.25 3V10.5C11.25 10.6989 11.329 10.8897 11.4697 11.0303C11.6103 11.171 11.8011 11.25 12 11.25C12.1989 11.25 12.3897 11.171 12.5303 11.0303C12.671 10.8897 12.75 10.6989 12.75 10.5V4.5C12.75 4.10218 12.908 3.72064 13.1893 3.43934C13.4706 3.15804 13.8522 3 14.25 3C14.6478 3 15.0294 3.15804 15.3107 3.43934C15.592 3.72064 15.75 4.10218 15.75 4.5V12C15.75 12.1989 15.829 12.3897 15.9697 12.5303C16.1103 12.671 16.3011 12.75 16.5 12.75C16.6989 12.75 16.8897 12.671 17.0303 12.5303C17.171 12.3897 17.25 12.1989 17.25 12V9.75C17.25 9.35218 17.408 8.97064 17.6893 8.68934C17.9706 8.40804 18.3522 8.25 18.75 8.25C19.1478 8.25 19.5294 8.40804 19.8107 8.68934C20.092 8.97064 20.25 9.35218 20.25 9.75ZM16.8356 16.7072C16.77 16.5759 15.195 13.5 12 13.5C8.805 13.5 7.23 16.5759 7.16437 16.7072C7.1383 16.7593 7.12473 16.8167 7.12473 16.875C7.12473 16.9333 7.1383 16.9907 7.16437 17.0428C7.23 17.1741 8.805 20.25 12 20.25C15.195 20.25 16.77 17.1741 16.8356 17.0428C16.8617 16.9907 16.8753 16.9333 16.8753 16.875C16.8753 16.8167 16.8617 16.7593 16.8356 16.7072Z" fill="#FF4000"/>
+        </svg>
+        <span class="font-semibold text-lg">RedSeam Clothing</span>
+      </div>
+    </a>
     <a href="#" class="flex items-center text-xl font-medium text-gray-800 hover:text-black pr-12">
-    <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M7 6C8.65685 6 10 4.65685 10 3C10 1.34315 8.65685 0 7 0C5.34315 0 4 1.34315 4 3C4 4.65685 5.34315 6 7 6Z" fill="#10151F"/>
-    <path d="M0.465171 12.4935C0.270287 13.0016 0.444349 13.571 0.874199 13.9046C2.56656 15.218 4.69202 16 7.00012 16C9.31057 16 11.438 15.2164 13.1312 13.9006C13.5608 13.5667 13.7345 12.9971 13.5393 12.4892C12.5301 9.86354 9.98419 8 7.00307 8C4.02032 8 1.47329 9.86557 0.465171 12.4935Z" fill="#10151F"/>
-    </svg>
+      <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M7 6C8.65685 6 10 4.65685 10 3C10 1.34315 8.65685 0 7 0C5.34315 0 4 1.34315 4 3C4 4.65685 5.34315 6 7 6Z" fill="#10151F"/>
+        <path d="M0.465171 12.4935C0.270287 13.0016 0.444349 13.571 0.874199 13.9046C2.56656 15.218 4.69202 16 7.00012 16C9.31057 16 11.438 15.2164 13.1312 13.9006C13.5608 13.5667 13.7345 12.9971 13.5393 12.4892C12.5301 9.86354 9.98419 8 7.00307 8C4.02032 8 1.47329 9.86557 0.465171 12.4935Z" fill="#10151F"/>
+      </svg>
       Log in
     </a>
   </header>
 
-  <main class="grid grid-cols-1 md:grid-cols-2 min-h-[calc(100vh-64px)]">
-    <div class="hidden md:block">
+  <div class="h-screen flex bg-white">
+    <!-- Left side (image placeholder) -->
+    <div class="hidden md:flex w-1/2 bg-gray-100 items-center justify-center">
       <img src="imgs/fash img.png" 
-           alt="Fashion" class="w-full h-full object-cover">
+           alt="Fashion" class="w-full h-full object-center">
     </div>
 
-    <div class="flex items-center justify-center p-8">
-      <div class="w-full max-w-md">
-        <h2 class="text-4xl font-bold mb-12">Log in</h2>
+    <!-- Right side -->
+    <div class="flex w-full md:w-1/2 items-center justify-center p-8">
+      <div class="max-w-md w-full">
+        <h2 class="text-3xl font-bold mb-6">Registration</h2>
 
-        <form action="#" method="POST" class="space-y-8">
-            <div class="relative">
-                <input type="text" 
-                       required
-                       class="peer w-full rounded-md border border-gray-300 px-3 py-3 
-                              focus:outline-none focus:ring-2 focus:ring-orange-500
-                              placeholder-transparent" 
-                       placeholder="Email or username">
-              
-                <span class="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500 text-sm pointer-events-none 
-                             peer-placeholder-shown:opacity-100 peer-focus:opacity-0 opacity-0 transition">
-                  Email or username <span class="text-red-500">*</span>
-                </span>
-              </div>
-
+        <!-- PROFILE UPLOAD -->
+        <div class="flex items-start mb-6">
+          <!-- Photo -->
           <div>
-            <div class="relative">
-                <input type="password" 
-                       required
-                       class="peer w-full rounded-md border border-gray-300 px-3 py-3 pr-10
-                              focus:outline-none focus:ring-2 focus:ring-orange-500
-                              placeholder-transparent" 
-                       placeholder="Password">
-              
-                <span class="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500 text-sm pointer-events-none 
-                             peer-placeholder-shown:opacity-100 peer-focus:opacity-0 opacity-0 transition">
-                  Password <span class="text-red-500">*</span>
-                </span>
-              
-                <button type="button" 
-                        class="absolute inset-y-0 right-0 flex items-center pr-3 text-gray-400 hover:text-gray-600">
-                  👁
-                </button>
-              </div>
+            <img id="profilePreview"
+                src="https://cdn-icons-png.flaticon.com/512/149/149071.png"
+                alt="Profile"
+                class="w-24 h-24 rounded-full object-cover border" />
+            <input type="file" id="profilePhotoInput" accept="image/*" class="hidden" />
           </div>
-          <button type="submit"
-                  class="w-full bg-orange-600 hover:bg-orange-700 text-white font-medium py-3 rounded-md transition">
-            Log in
-          </button>
+
+          <!-- Buttons -->
+          <div class="ml-4 flex flex-col space-y-2">
+            <button type="button" id="uploadNew" class="text-sm text-blue-600">Upload new</button>
+            <button type="button" id="removePhoto" class="text-sm text-red-600 hidden">Remove</button>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <form id="registerForm" class="space-y-4">
+          <div>
+            <input id="username" type="text" placeholder="Username *" class="w-full border rounded-md px-3 py-2"/>
+            <p id="usernameError" class="text-red-500 text-sm hidden"></p>
+          </div>
+          <div>
+            <input id="email" type="email" placeholder="Email *" class="w-full border rounded-md px-3 py-2"/>
+            <p id="emailError" class="text-red-500 text-sm hidden"></p>
+          </div>
+          <div class="relative">
+            <input id="password" type="password" placeholder="Password *" class="w-full border rounded-md px-3 py-2 pr-10"/>
+            <button type="button" id="togglePassword" class="absolute right-3 top-2.5 text-gray-600"><svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1.69556 7.26867C1.63799 7.09594 1.63794 6.90895 1.6954 6.73619C2.85237 3.2581 6.13326 0.75 9.99994 0.75C13.8648 0.75 17.1445 3.25577 18.3029 6.73134C18.3604 6.90406 18.3605 7.09106 18.303 7.26381C17.1461 10.7419 13.8652 13.25 9.99848 13.25C6.1336 13.25 2.85397 10.7442 1.69556 7.26867Z" stroke="#0F172A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M12.4993 7C12.4993 8.38071 11.38 9.5 9.99927 9.5C8.61856 9.5 7.49927 8.38071 7.49927 7C7.49927 5.61929 8.61856 4.5 9.99927 4.5C11.38 4.5 12.4993 5.61929 12.4993 7Z" stroke="#0F172A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <p id="passwordError" class="text-red-500 text-sm hidden"></p>
+          </div>
+          <div class="relative">
+            <input id="confirmPassword" type="password" placeholder="Confirm password *" class="w-full border rounded-md px-3 py-2 pr-10"/>
+            <button type="button" id="toggleConfirmPassword" class="absolute right-3 top-2.5 text-gray-600"><svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1.69556 7.26867C1.63799 7.09594 1.63794 6.90895 1.6954 6.73619C2.85237 3.2581 6.13326 0.75 9.99994 0.75C13.8648 0.75 17.1445 3.25577 18.3029 6.73134C18.3604 6.90406 18.3605 7.09106 18.303 7.26381C17.1461 10.7419 13.8652 13.25 9.99848 13.25C6.1336 13.25 2.85397 10.7442 1.69556 7.26867Z" stroke="#0F172A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M12.4993 7C12.4993 8.38071 11.38 9.5 9.99927 9.5C8.61856 9.5 7.49927 8.38071 7.49927 7C7.49927 5.61929 8.61856 4.5 9.99927 4.5C11.38 4.5 12.4993 5.61929 12.4993 7Z" stroke="#0F172A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <p id="confirmError" class="text-red-500 text-sm hidden"></p>
+          </div>
+
+          <button type="submit" class="w-full bg-[#FF4000] text-white py-2 rounded-md">Register</button>
         </form>
 
-        <p class="mt-4 text-center text-sm text-gray-600">
-          Not a member?
-          <a href="#" class="text-orange-600 hover:underline">Register</a>
+        <p class="text-center text-sm mt-4">
+          Already member? <a href="/login" class="text-[#FF4000]">Log in</a>
         </p>
       </div>
     </div>
-  </main>
+  </div>
+
+ <script>
+  const profileInput = document.getElementById("profilePhotoInput");
+  const profilePreview = document.getElementById("profilePreview");
+  const uploadNew = document.getElementById("uploadNew");
+  const removePhoto = document.getElementById("removePhoto");
+
+  uploadNew.addEventListener("click", () => profileInput.click());
+  profilePreview.addEventListener("click", () => profileInput.click());
+
+  profileInput.addEventListener("change", () => {
+    const file = profileInput.files[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onload = (e) => {
+        profilePreview.src = e.target.result;
+        removePhoto.classList.remove("hidden");
+      };
+      reader.readAsDataURL(file);
+    }
+  });
+
+  removePhoto.addEventListener("click", () => {
+    profileInput.value = "";
+    profilePreview.src = "https://cdn-icons-png.flaticon.com/512/149/149071.png";
+    removePhoto.classList.add("hidden");
+  });
+
+  document.getElementById("registerForm").addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    ["usernameError","emailError","passwordError","confirmError"].forEach(id=>{
+      document.getElementById(id).classList.add("hidden");
+    });
+
+    const username = document.getElementById("username").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const password = document.getElementById("password").value;
+    const confirmPassword = document.getElementById("confirmPassword").value;
+    const photo = profileInput.files[0]; // <---- fixed
+
+    let hasError = false;
+    if (username.length < 3) {
+      document.getElementById("usernameError").textContent = "Username must be at least 3 characters";
+      document.getElementById("usernameError").classList.remove("hidden");
+      hasError = true;
+    }
+    if (!email.match(/^[^@]+@[^@]+\.[^@]+$/)) {
+      document.getElementById("emailError").textContent = "Invalid email format";
+      document.getElementById("emailError").classList.remove("hidden");
+      hasError = true;
+    }
+    if (password.length < 3) {
+      document.getElementById("passwordError").textContent = "Password must be at least 3 characters";
+      document.getElementById("passwordError").classList.remove("hidden");
+      hasError = true;
+    }
+    if (confirmPassword !== password) {
+      document.getElementById("confirmError").textContent = "Passwords do not match";
+      document.getElementById("confirmError").classList.remove("hidden");
+      hasError = true;
+    }
+    if (hasError) return;
+
+    const formData = new FormData();
+    formData.append("username", username);
+    formData.append("email", email);
+    formData.append("password", password);
+    formData.append("password_confirmation", confirmPassword);
+    if (photo) formData.append("avatar", photo);
+
+    try {
+      const res = await fetch("https://api.redseam.redberryinternship.ge/api/register", {
+        method: "POST",
+        body: formData
+      });
+
+      let data;
+      try {
+        data = await res.json();
+      } catch {
+        const text = await res.text();
+        console.error("Non-JSON response:", text);
+        alert("Unexpected server response. Check console.");
+        return;
+      }
+
+      if (!res.ok) {
+        console.warn("Validation/server error:", data);
+        if (data.errors) {
+          for (const key in data.errors) {
+            if (document.getElementById(`${key}Error`)) {
+              document.getElementById(`${key}Error`).textContent = data.errors[key][0];
+              document.getElementById(`${key}Error`).classList.remove("hidden");
+            } else {
+              alert(`${key}: ${data.errors[key].join(", ")}`);
+            }
+          }
+        } else {
+          alert(data.message || "Registration failed");
+        }
+        return;
+      }
+
+      localStorage.setItem("user", JSON.stringify(data.user));
+      localStorage.setItem("token", data.token);
+      window.location.href = "landing-page.html";
+    } catch (err) {
+      console.error("Fetch/network error:", err);
+      alert("Something went wrong (network or CORS). Check console.");
+    }
+  });
+</script>
 
 </body>
 </html>
