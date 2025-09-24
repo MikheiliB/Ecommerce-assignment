@@ -120,15 +120,28 @@
 
     function renderHeader() {
       const token = localStorage.getItem("token");
-      if (token) {
+      const storedUser = localStorage.getItem("user");
+
+      if (storedUser && token) {
+        const user = JSON.parse(storedUser);
+        const avatarUrl = user.avatar 
+        ? user.avatar 
+        : "https://via.placeholder.com/40";
+
         headerAction.innerHTML = `
           <button id="openCartBtn" class="flex items-center text-xl font-medium text-gray-800 hover:text-black">
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.3 5.2a1 1 0 001 1.3h12.6a1 1 0 001-1.3L17 13M7 13l10 0" />
+          <div class="flex items-center space-x-2">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.25 2.25C1.83579 2.25 1.5 2.58579 1.5 3C1.5 3.41421 1.83579 3.75 2.25 3.75H3.63568C3.80558 3.75 3.95425 3.86422 3.99803 4.02838L6.55576 13.6199C4.94178 14.0385 3.75 15.5051 3.75 17.25C3.75 17.6642 4.08579 18 4.5 18H20.25C20.6642 18 21 17.6642 21 17.25C21 16.8358 20.6642 16.5 20.25 16.5H5.37803C5.68691 15.6261 6.52034 15 7.5 15H18.7183C19.0051 15 19.2668 14.8364 19.3925 14.5785C20.5277 12.249 21.5183 9.83603 22.3527 7.35126C22.4191 7.15357 22.4002 6.93716 22.3005 6.75399C22.2008 6.57082 22.0294 6.43743 21.8273 6.38583C17.0055 5.15442 11.9536 4.5 6.75 4.5C6.39217 4.5 6.03505 4.5031 5.67868 4.50926L5.44738 3.64188C5.2285 2.82109 4.48515 2.25 3.63568 2.25H2.25Z" fill="#10151F"/>
+            <path d="M3.75 20.25C3.75 19.4216 4.42157 18.75 5.25 18.75C6.07843 18.75 6.75 19.4216 6.75 20.25C6.75 21.0784 6.07843 21.75 5.25 21.75C4.42157 21.75 3.75 21.0784 3.75 20.25Z" fill="#10151F"/>
+            <path d="M16.5 20.25C16.5 19.4216 17.1716 18.75 18 18.75C18.8284 18.75 19.5 19.4216 19.5 20.25C19.5 21.0784 18.8284 21.75 18 21.75C17.1716 21.75 16.5 21.0784 16.5 20.25Z" fill="#10151F"/>
             </svg>
-            Cart
-            <span id="cartCount" class="ml-1 text-sm bg-red-500 text-white rounded-full px-2">0</span>
+            <img src="${avatarUrl}" alt="avatar" class="w-10 h-10 rounded-full object-cover border" />
+            <span class="font-medium"><svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.21967 0.71967C0.512563 0.426777 0.987437 0.426777 1.28033 0.71967L5 4.43934L8.71967 0.719671C9.01256 0.426777 9.48744 0.426777 9.78033 0.719671C10.0732 1.01256 10.0732 1.48744 9.78033 1.78033L5.53033 6.03033C5.38968 6.17098 5.19891 6.25 5 6.25C4.80109 6.25 4.61032 6.17098 4.46967 6.03033L0.21967 1.78033C-0.0732233 1.48744 -0.0732233 1.01256 0.21967 0.71967Z" fill="#10151F"/>
+            </svg>
+            </span>
+          </div>
           </button>
         `;
         document.getElementById("openCartBtn").onclick = () => {
@@ -191,11 +204,28 @@
               circle.classList.add("border-red-500");
               document.getElementById("selectedColor").textContent = color;
             } else circle.classList.add("border-gray-300");
+
             circle.onclick = () => {
-              document.querySelectorAll("#colorOptions div").forEach(c => c.classList.replace("border-red-500","border-gray-300"));
+              document.querySelectorAll("#colorOptions div").forEach(c => 
+                c.classList.replace("border-red-500","border-gray-300")
+              );
               circle.classList.replace("border-gray-300","border-red-500");
               document.getElementById("selectedColor").textContent = color;
+
+              if (product.images?.[idx]) {
+                const mainImage = document.getElementById("mainImage");
+                mainImage.src = product.images[idx];
+
+                const thumbnails = document.querySelectorAll("#thumbnails img");
+                thumbnails.forEach((thumb, tIdx) => {
+                  thumb.classList.remove("ring-2","ring-red-500");
+                  if (tIdx === idx) {
+                    thumb.classList.add("ring-2","ring-red-500");
+                  }
+                });
+              }
             };
+
             colorOptions.appendChild(circle);
           });
         }
@@ -302,6 +332,7 @@
       document.getElementById("loginPopup").classList.add("hidden");
       overlay.classList.add("hidden");
     };
-  </script>
+</script>
+
 </body>
 </html>
