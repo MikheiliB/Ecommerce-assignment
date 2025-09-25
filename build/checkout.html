@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="bg-white text-gray-900 font-[Poppins]">
+    <header class="flex items-center justify-between px-6 py-4 border-b">
+        <a href="landing-page.html">
+            <div class="flex items-center space-x-2 pl-12">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M13.5 16.875C13.5 17.1717 13.412 17.4617 13.2472 17.7084C13.0824 17.955 12.8481 18.1473 12.574 18.2608C12.2999 18.3744 11.9983 18.4041 11.7074 18.3462C11.4164 18.2883 11.1491 18.1454 10.9393 17.9357C10.7296 17.7259 10.5867 17.4586 10.5288 17.1676C10.4709 16.8767 10.5006 16.5751 10.6142 16.301C10.7277 16.0269 10.92 15.7926 11.1666 15.6278C11.4133 15.463 11.7033 15.375 12 15.375C12.3978 15.375 12.7794 15.533 13.0607 15.8143C13.342 16.0956 13.5 16.4772 13.5 16.875ZM20.25 9.75V14.25C20.25 16.438 19.3808 18.5365 17.8336 20.0836C16.2865 21.6308 14.188 22.5 12 22.5C9.81196 22.5 7.71354 21.6308 6.16637 20.0836C4.61919 18.5365 3.75 16.438 3.75 14.25V6C3.75 5.60218 3.90804 5.22064 4.18934 4.93934C4.47064 4.65804 4.85218 4.5 5.25 4.5C5.64782 4.5 6.02936 4.65804 6.31066 4.93934C6.59196 5.22064 6.75 5.60218 6.75 6V11.25C6.75 11.4489 6.82902 11.6397 6.96967 11.7803C7.11032 11.921 7.30109 12 7.5 12C7.69891 12 7.88968 11.921 8.03033 11.7803C8.17098 11.6397 8.25 11.4489 8.25 11.25V3C8.25 2.60218 8.40804 2.22064 8.68934 1.93934C8.97064 1.65804 9.35218 1.5 9.75 1.5C10.1478 1.5 10.5294 1.65804 10.8107 1.93934C11.092 2.22064 11.25 2.60218 11.25 3V10.5C11.25 10.6989 11.329 10.8897 11.4697 11.0303C11.6103 11.171 11.8011 11.25 12 11.25C12.1989 11.25 12.3897 11.171 12.5303 11.0303C12.671 10.8897 12.75 10.6989 12.75 10.5V4.5C12.75 4.10218 12.908 3.72064 13.1893 3.43934C13.4706 3.15804 13.8522 3 14.25 3C14.6478 3 15.0294 3.15804 15.3107 3.43934C15.592 3.72064 15.75 4.10218 15.75 4.5V12C15.75 12.1989 15.829 12.3897 15.9697 12.5303C16.1103 12.671 16.3011 12.75 16.5 12.75C16.6989 12.75 16.8897 12.671 17.0303 12.5303C17.171 12.3897 17.25 12.1989 17.25 12V9.75C17.25 9.35218 17.408 8.97064 17.6893 8.68934C17.9706 8.40804 18.3522 8.25 18.75 8.25C19.1478 8.25 19.5294 8.40804 19.8107 8.68934C20.092 8.97064 20.25 9.35218 20.25 9.75ZM16.8356 16.7072C16.77 16.5759 15.195 13.5 12 13.5C8.805 13.5 7.23 16.5759 7.16437 16.7072C7.1383 16.7593 7.12473 16.8167 7.12473 16.875C7.12473 16.9333 7.1383 16.9907 7.16437 17.0428C7.23 17.1741 8.805 20.25 12 20.25C15.195 20.25 16.77 17.1741 16.8356 17.0428C16.8617 16.9907 16.8753 16.9333 16.8753 16.875C16.8753 16.8167 16.8617 16.7593 16.8356 16.7072Z"
+                        fill="#FF4000" />
+                </svg>
+                <span class="font-semibold text-lg">RedSeam Clothing</span>
+            </div>
+        </a>
+        <a href="checkout.html">
+            <div id="userArea" class="pr-12">
+            </div>
+        </a>
+    </header>
+    <div class="pl-[150px] pr-[72px]">
+        <div class="py-10">
+            <div class="flex items-center justify-between">
+                <h1 class="text-3xl font-bold">Products</h1>
+            </div>
+        </div>
+    </div>
+    <main class="container mx-auto p-6 grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="bg-gray-50 p-8 rounded-lg shadow">
+            <h2 class="text-xl font-semibold mb-6">Order details</h2>
+            <form id="checkoutForm" class="grid grid-cols-2 gap-4">
+                <input type="text" id="firstName" placeholder="Name" class="border rounded px-3 py-2 col-span-1"
+                    required>
+                <input type="text" id="lastName" placeholder="Surname" class="border rounded px-3 py-2 col-span-1"
+                    required>
+                <input type="email" id="email" placeholder="Email" class="border rounded px-3 py-2 col-span-2" required>
+                <input type="text" id="address" placeholder="Address" class="border rounded px-3 py-2 col-span-1"
+                    required>
+                <input type="text" id="zip" placeholder="Zip code" class="border rounded px-3 py-2 col-span-1" required>
+            </form>
+        </div>
+
+        <div>
+            <div id="cartItems" class="space-y-4 mb-6"></div>
+            <div class="border-t pt-4 text-sm space-y-2">
+                <div class="flex justify-between">
+                    <span>Items subtotal</span>
+                    <span id="subtotal">$0</span>
+                </div>
+                <div class="flex justify-between">
+                    <span>Delivery</span>
+                    <span id="delivery">$5</span>
+                </div>
+                <div class="flex justify-between font-semibold text-lg">
+                    <span>Total</span>
+                    <span id="total">$0</span>
+                </div>
+            </div>
+            <button id="payBtn" class="mt-6 w-full bg-orange-600 text-white py-3 rounded hover:bg-orange-700">
+                Pay
+            </button>
+        </div>
+    </main>
+
+<script>
+  const cartApi = "https://api.redseam.redberryinternship.ge/api/cart";
+  const checkoutApi = "https://api.redseam.redberryinternship.ge/api/cart/checkout";
+  const token = localStorage.getItem("token");
+  const storedUser = localStorage.getItem("user");
+
+  async function loadCart() {
+    if (!token) return;
+    const res = await fetch(cartApi, {
+      headers: { "Authorization": `Bearer ${token}` }
+    });
+    const cart = await res.json();
+    const cartItems = document.getElementById("cartItems");
+    cartItems.innerHTML = "";
+
+    let subtotal = 0;
+    if (cart.length === 0) {
+      cartItems.innerHTML = "<p class='text-gray-500'>Your cart is empty.</p>";
+    }
+
+    cart.forEach(item => {
+      subtotal += item.total_price;
+      const div = document.createElement("div");
+      div.className = "flex items-center gap-3";
+      div.innerHTML = `
+        <img src="${item.cover_image}" class="w-16 h-16 object-cover rounded"/>
+        <div class="flex-1">
+          <p class="font-medium">${item.name}</p>
+          <p class="text-sm text-gray-500">${item.size ? item.size : ""} ${item.color ? item.color : ""}</p>
+          <p class="text-sm">Qty: ${item.quantity}</p>
+        </div>
+        <span class="font-medium">$${item.total_price}</span>
+      `;
+      cartItems.appendChild(div);
+    });
+
+    document.getElementById("subtotal").textContent = "$" + subtotal.toFixed(2);
+    const delivery = 5;
+    document.getElementById("total").textContent = "$" + (subtotal + delivery).toFixed(2);
+  }
+
+  if (storedUser) {
+    try {
+      const user = JSON.parse(storedUser);
+      if (user.email) {
+        document.getElementById("email").value = user.email;
+      }
+    } catch (e) {
+      console.warn("Failed to parse user from localStorage", e);
+    }
+  }
+
+  document.getElementById("payBtn").onclick = async () => {
+    const payload = {
+      type: "order",
+      props: {
+        name: document.getElementById("firstName").value + " " + document.getElementById("lastName").value,
+        email: document.getElementById("email").value,
+        address: document.getElementById("address").value,
+        zip: document.getElementById("zip").value
+      }
+    };
+
+    try {
+      const res = await fetch(checkoutApi, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "Authorization": `Bearer ${token}`
+        },
+        body: JSON.stringify(payload)
+      });
+      if (res.ok) {
+        await loadCart();
+
+        showCongratsModal();
+      } else {
+        const err = await res.json();
+        alert("Checkout failed: " + JSON.stringify(err));
+      }
+    } catch (e) {
+      console.error(e);
+      alert("An error occurred while checking out.");
+    }
+  };
+
+  // Congratulatory modal
+  function showCongratsModal() {
+    const modal = document.createElement("div");
+    modal.className = "fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50";
+    modal.innerHTML = `
+      <div class="bg-white rounded-lg shadow-lg p-8 text-center max-w-md mx-auto">
+        <h2 class="text-2xl font-bold mb-4">Congratulations 🎉</h2>
+        <p class="mb-6">Your order has been placed successfully.</p>
+        <button class="bg-orange-600 text-white px-4 py-2 rounded hover:bg-orange-700">Close</button>
+      </div>
+    `;
+    document.body.appendChild(modal);
+
+    modal.querySelector("button").onclick = () => {
+      modal.remove();
+      window.location.href = "/thank-you.html"; // optional redirect
+    };
+  }
+  function renderUser() {
+    const userArea = document.getElementById("userArea");
+    const storedUser = localStorage.getItem("user");
+    const token = localStorage.getItem("token");
+
+    if (storedUser && token) {
+      const user = JSON.parse(storedUser);
+      const avatarUrl = user.avatar 
+        ? user.avatar 
+        : "https://via.placeholder.com/40";
+
+      userArea.innerHTML = `
+        <div class="flex items-center space-x-2">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M2.25 2.25C1.83579 2.25 1.5 2.58579 1.5 3C1.5 3.41421 1.83579 3.75 2.25 3.75H3.63568C3.80558 3.75 3.95425 3.86422 3.99803 4.02838L6.55576 13.6199C4.94178 14.0385 3.75 15.5051 3.75 17.25C3.75 17.6642 4.08579 18 4.5 18H20.25C20.6642 18 21 17.6642 21 17.25C21 16.8358 20.6642 16.5 20.25 16.5H5.37803C5.68691 15.6261 6.52034 15 7.5 15H18.7183C19.0051 15 19.2668 14.8364 19.3925 14.5785C20.5277 12.249 21.5183 9.83603 22.3527 7.35126C22.4191 7.15357 22.4002 6.93716 22.3005 6.75399C22.2008 6.57082 22.0294 6.43743 21.8273 6.38583C17.0055 5.15442 11.9536 4.5 6.75 4.5C6.39217 4.5 6.03505 4.5031 5.67868 4.50926L5.44738 3.64188C5.2285 2.82109 4.48515 2.25 3.63568 2.25H2.25Z" fill="#10151F"/>
+          <path d="M3.75 20.25C3.75 19.4216 4.42157 18.75 5.25 18.75C6.07843 18.75 6.75 19.4216 6.75 20.25C6.75 21.0784 6.07843 21.75 5.25 21.75C4.42157 21.75 3.75 21.0784 3.75 20.25Z" fill="#10151F"/>
+          <path d="M16.5 20.25C16.5 19.4216 17.1716 18.75 18 18.75C18.8284 18.75 19.5 19.4216 19.5 20.25C19.5 21.0784 18.8284 21.75 18 21.75C17.1716 21.75 16.5 21.0784 16.5 20.25Z" fill="#10151F"/>
+          </svg>
+          <img src="${avatarUrl}" alt="avatar" class="w-10 h-10 rounded-full object-cover border" />
+          <span class="font-medium"><svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M0.21967 0.71967C0.512563 0.426777 0.987437 0.426777 1.28033 0.71967L5 4.43934L8.71967 0.719671C9.01256 0.426777 9.48744 0.426777 9.78033 0.719671C10.0732 1.01256 10.0732 1.48744 9.78033 1.78033L5.53033 6.03033C5.38968 6.17098 5.19891 6.25 5 6.25C4.80109 6.25 4.61032 6.17098 4.46967 6.03033L0.21967 1.78033C-0.0732233 1.48744 -0.0732233 1.01256 0.21967 0.71967Z" fill="#10151F"/>
+          </svg>
+          </span>
+        </div>
+      `;
+    } else {
+      userArea.innerHTML = `
+        <a href="login.html" class="flex items-center text-xl font-medium text-gray-800 hover:text-black">
+          <svg width="14" height="16" viewBox="0 0 14 16" fill="none">
+            <path d="..." fill="#10151F"/>
+          </svg>
+          Log in
+        </a>
+      `;
+    }
+  }
+
+  renderUser();
+  loadCart();
+</script>
+
+</body>
+</html>
