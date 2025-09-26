@@ -32,6 +32,3 @@ You can view the live deployed version:
 
 
 ---
-
-## Project Structure
-
