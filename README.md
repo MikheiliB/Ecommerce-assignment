@@ -10,7 +10,7 @@ This project demonstrates the use of HTML, CSS, JavaScript to build a product li
 ## Demo / Live Site
 
 You can view the live deployed version:
-ecommerceinternship.netlify.app
+**[Live Site →](ecommerceinternship.netlify.app)**
 
 ---
 
