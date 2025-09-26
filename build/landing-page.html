@@ -1,80 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Products</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 </head>
-<body class="bg-gray-50 text-gray-900">
+
+<body class="bg-gray-50 text-gray-900 font-[Poppins]">
   <header class="flex items-center justify-between px-6 py-4 border-b">
-  <a href="landing-page.html">
-    <div class="flex items-center space-x-2 pl-12">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M13.5 16.875C13.5 17.1717 13.412 17.4617 13.2472 17.7084C13.0824 17.955 12.8481 18.1473 12.574 18.2608C12.2999 18.3744 11.9983 18.4041 11.7074 18.3462C11.4164 18.2883 11.1491 18.1454 10.9393 17.9357C10.7296 17.7259 10.5867 17.4586 10.5288 17.1676C10.4709 16.8767 10.5006 16.5751 10.6142 16.301C10.7277 16.0269 10.92 15.7926 11.1666 15.6278C11.4133 15.463 11.7033 15.375 12 15.375C12.3978 15.375 12.7794 15.533 13.0607 15.8143C13.342 16.0956 13.5 16.4772 13.5 16.875ZM20.25 9.75V14.25C20.25 16.438 19.3808 18.5365 17.8336 20.0836C16.2865 21.6308 14.188 22.5 12 22.5C9.81196 22.5 7.71354 21.6308 6.16637 20.0836C4.61919 18.5365 3.75 16.438 3.75 14.25V6C3.75 5.60218 3.90804 5.22064 4.18934 4.93934C4.47064 4.65804 4.85218 4.5 5.25 4.5C5.64782 4.5 6.02936 4.65804 6.31066 4.93934C6.59196 5.22064 6.75 5.60218 6.75 6V11.25C6.75 11.4489 6.82902 11.6397 6.96967 11.7803C7.11032 11.921 7.30109 12 7.5 12C7.69891 12 7.88968 11.921 8.03033 11.7803C8.17098 11.6397 8.25 11.4489 8.25 11.25V3C8.25 2.60218 8.40804 2.22064 8.68934 1.93934C8.97064 1.65804 9.35218 1.5 9.75 1.5C10.1478 1.5 10.5294 1.65804 10.8107 1.93934C11.092 2.22064 11.25 2.60218 11.25 3V10.5C11.25 10.6989 11.329 10.8897 11.4697 11.0303C11.6103 11.171 11.8011 11.25 12 11.25C12.1989 11.25 12.3897 11.171 12.5303 11.0303C12.671 10.8897 12.75 10.6989 12.75 10.5V4.5C12.75 4.10218 12.908 3.72064 13.1893 3.43934C13.4706 3.15804 13.8522 3 14.25 3C14.6478 3 15.0294 3.15804 15.3107 3.43934C15.592 3.72064 15.75 4.10218 15.75 4.5V12C15.75 12.1989 15.829 12.3897 15.9697 12.5303C16.1103 12.671 16.3011 12.75 16.5 12.75C16.6989 12.75 16.8897 12.671 17.0303 12.5303C17.171 12.3897 17.25 12.1989 17.25 12V9.75C17.25 9.35218 17.408 8.97064 17.6893 8.68934C17.9706 8.40804 18.3522 8.25 18.75 8.25C19.1478 8.25 19.5294 8.40804 19.8107 8.68934C20.092 8.97064 20.25 9.35218 20.25 9.75ZM16.8356 16.7072C16.77 16.5759 15.195 13.5 12 13.5C8.805 13.5 7.23 16.5759 7.16437 16.7072C7.1383 16.7593 7.12473 16.8167 7.12473 16.875C7.12473 16.9333 7.1383 16.9907 7.16437 17.0428C7.23 17.1741 8.805 20.25 12 20.25C15.195 20.25 16.77 17.1741 16.8356 17.0428C16.8617 16.9907 16.8753 16.9333 16.8753 16.875C16.8753 16.8167 16.8617 16.7593 16.8356 16.7072Z" fill="#FF4000"/>
-            </svg>
-      <span class="font-semibold text-lg">RedSeam Clothing</span>
-    </div>
-  </a>
-  <a href="cart.html">
-    <div id="userArea" class="pr-12">
-    </div>
-  </a>
-</header>
+    <a href="landing-page.html">
+      <div class="flex items-center space-x-2 pl-12">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M13.5 16.875C13.5 17.1717 13.412 17.4617 13.2472 17.7084C13.0824 17.955 12.8481 18.1473 12.574 18.2608C12.2999 18.3744 11.9983 18.4041 11.7074 18.3462C11.4164 18.2883 11.1491 18.1454 10.9393 17.9357C10.7296 17.7259 10.5867 17.4586 10.5288 17.1676C10.4709 16.8767 10.5006 16.5751 10.6142 16.301C10.7277 16.0269 10.92 15.7926 11.1666 15.6278C11.4133 15.463 11.7033 15.375 12 15.375C12.3978 15.375 12.7794 15.533 13.0607 15.8143C13.342 16.0956 13.5 16.4772 13.5 16.875ZM20.25 9.75V14.25C20.25 16.438 19.3808 18.5365 17.8336 20.0836C16.2865 21.6308 14.188 22.5 12 22.5C9.81196 22.5 7.71354 21.6308 6.16637 20.0836C4.61919 18.5365 3.75 16.438 3.75 14.25V6C3.75 5.60218 3.90804 5.22064 4.18934 4.93934C4.47064 4.65804 4.85218 4.5 5.25 4.5C5.64782 4.5 6.02936 4.65804 6.31066 4.93934C6.59196 5.22064 6.75 5.60218 6.75 6V11.25C6.75 11.4489 6.82902 11.6397 6.96967 11.7803C7.11032 11.921 7.30109 12 7.5 12C7.69891 12 7.88968 11.921 8.03033 11.7803C8.17098 11.6397 8.25 11.4489 8.25 11.25V3C8.25 2.60218 8.40804 2.22064 8.68934 1.93934C8.97064 1.65804 9.35218 1.5 9.75 1.5C10.1478 1.5 10.5294 1.65804 10.8107 1.93934C11.092 2.22064 11.25 2.60218 11.25 3V10.5C11.25 10.6989 11.329 10.8897 11.4697 11.0303C11.6103 11.171 11.8011 11.25 12 11.25C12.1989 11.25 12.3897 11.171 12.5303 11.0303C12.671 10.8897 12.75 10.6989 12.75 10.5V4.5C12.75 4.10218 12.908 3.72064 13.1893 3.43934C13.4706 3.15804 13.8522 3 14.25 3C14.6478 3 15.0294 3.15804 15.3107 3.43934C15.592 3.72064 15.75 4.10218 15.75 4.5V12C15.75 12.1989 15.829 12.3897 15.9697 12.5303C16.1103 12.671 16.3011 12.75 16.5 12.75C16.6989 12.75 16.8897 12.671 17.0303 12.5303C17.171 12.3897 17.25 12.1989 17.25 12V9.75C17.25 9.35218 17.408 8.97064 17.6893 8.68934C17.9706 8.40804 18.3522 8.25 18.75 8.25C19.1478 8.25 19.5294 8.40804 19.8107 8.68934C20.092 8.97064 20.25 9.35218 20.25 9.75ZM16.8356 16.7072C16.77 16.5759 15.195 13.5 12 13.5C8.805 13.5 7.23 16.5759 7.16437 16.7072C7.1383 16.7593 7.12473 16.8167 7.12473 16.875C7.12473 16.9333 7.1383 16.9907 7.16437 17.0428C7.23 17.1741 8.805 20.25 12 20.25C15.195 20.25 16.77 17.1741 16.8356 17.0428C16.8617 16.9907 16.8753 16.9333 16.8753 16.875C16.8753 16.8167 16.8617 16.7593 16.8356 16.7072Z"
+            fill="#FF4000" />
+        </svg>
+        <span class="font-semibold text-lg">RedSeam Clothing</span>
+      </div>
+    </a>
+    <a href="checkout.html">
+      <div id="userArea" class="pr-12">
+      </div>
+    </a>
+  </header>
 
   <div class="pl-[72px] pr-[72px]">
     <div class="py-10">
       <div class="flex items-center justify-between mb-6">
-  <h1 class="text-3xl font-bold">Products</h1>
+        <h1 class="text-3xl font-bold">Products</h1>
 
-  <div class="flex items-center space-x-6">
-    <p id="resultsInfo" class="text-gray-600"></p>
+        <div class="flex items-center space-x-6">
+          <p id="resultsInfo" class="text-gray-600"></p>
 
-    <div class="flex items-center space-x-4">
-      <div class="relative">
-        <button id="filterBtn" class="flex items-center space-x-2 px-3 py-2 rounded">
-          <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M10.5 6.5L20.25 6.5M10.5 6.5C10.5 7.32843 9.82843 8 9 8C8.17157 8 7.5 7.32843 7.5 6.5M10.5 6.5C10.5 5.67157 9.82843 5 9 5C8.17157 5 7.5 5.67157 7.5 6.5M3.75 6.5H7.5M10.5 18.5H20.25M10.5 18.5C10.5 19.3284 9.82843 20 9 20C8.17157 20 7.5 19.3284 7.5 18.5M10.5 18.5C10.5 17.6716 9.82843 17 9 17C8.17157 17 7.5 17.6716 7.5 18.5M3.75 18.5L7.5 18.5M16.5 12.5L20.25 12.5M16.5 12.5C16.5 13.3284 15.8284 14 15 14C14.1716 14 13.5 13.3284 13.5 12.5M16.5 12.5C16.5 11.6716 15.8284 11 15 11C14.1716 11 13.5 11.6716 13.5 12.5M3.75 12.5H13.5" stroke="#0F172A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-          <span>Filter</span>
-        </button>
+          <div class="flex items-center space-x-4">
+            <div class="relative">
+              <button id="filterBtn" class="flex items-center space-x-2 px-3 py-2 rounded">
+                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M10.5 6.5L20.25 6.5M10.5 6.5C10.5 7.32843 9.82843 8 9 8C8.17157 8 7.5 7.32843 7.5 6.5M10.5 6.5C10.5 5.67157 9.82843 5 9 5C8.17157 5 7.5 5.67157 7.5 6.5M3.75 6.5H7.5M10.5 18.5H20.25M10.5 18.5C10.5 19.3284 9.82843 20 9 20C8.17157 20 7.5 19.3284 7.5 18.5M10.5 18.5C10.5 17.6716 9.82843 17 9 17C8.17157 17 7.5 17.6716 7.5 18.5M3.75 18.5L7.5 18.5M16.5 12.5L20.25 12.5M16.5 12.5C16.5 13.3284 15.8284 14 15 14C14.1716 14 13.5 13.3284 13.5 12.5M16.5 12.5C16.5 11.6716 15.8284 11 15 11C14.1716 11 13.5 11.6716 13.5 12.5M3.75 12.5H13.5"
+                    stroke="#0F172A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <span>Filter</span>
+              </button>
 
-        <div id="filterDropdown" class="hidden absolute right-0 mt-2 bg-white rounded-3xl shadow-lg p-6 z-20" style="width: 400px; height: 170px;">
-          <label class="block text-sm font-medium text-gray-700 mb-2">Select price</label>
-          <div class="flex space-x-2">
-            <input id="priceFrom" type="number" placeholder="From" class="w-1/2 border rounded-xl px-3 py-2">
-            <input id="priceTo" type="number" placeholder="To" class="w-1/2 border rounded-xl px-3 py-2">
+              <div id="filterDropdown" class="hidden absolute right-0 mt-2 bg-white rounded-3xl shadow-lg p-6 z-20"
+                style="width: 400px; height: 170px;">
+                <label class="block text-sm font-medium text-gray-700 mb-2">Select price</label>
+                <div class="flex space-x-2">
+                  <input id="priceFrom" type="number" placeholder="From" class="w-1/2 border rounded-xl px-3 py-2">
+                  <input id="priceTo" type="number" placeholder="To" class="w-1/2 border rounded-xl px-3 py-2">
+                </div>
+                <button id="applyFilter" class="mt-4 w-full bg-[#FF4000] text-white py-2 rounded-xl">Apply</button>
+              </div>
+            </div>
+
+            <div class="relative">
+              <button id="sortToggle"
+                class="flex items-center space-x-2 px-3 py-2 rounded-md text-gray-700 hover:text-black">
+                <span>Sort by</span>
+                <span class="transform transition-transform duration-200" id="sortArrow"><svg width="10" height="7"
+                    viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M0.21967 0.71967C0.512563 0.426777 0.987437 0.426777 1.28033 0.71967L5 4.43934L8.71967 0.719671C9.01256 0.426777 9.48744 0.426777 9.78033 0.719671C10.0732 1.01256 10.0732 1.48744 9.78033 1.78033L5.53033 6.03033C5.38968 6.17098 5.19891 6.25 5 6.25C4.80109 6.25 4.61032 6.17098 4.46967 6.03033L0.21967 1.78033C-0.0732233 1.48744 -0.0732233 1.01256 0.21967 0.71967Z"
+                      fill="#10151F" />
+                  </svg>
+                </span>
+              </button>
+
+              <div id="sortMenu" class="hidden absolute right-0 mt-2 w-44 bg-white rounded-xl shadow-lg z-20">
+                <h4 class="block w-full text-left px-4 py-2 font-bold">Sort by</h1>
+                  <button data-value="created_at"
+                    class="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-50">New product first</button>
+                  <button data-value="price"
+                    class="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-50">Price, low to high</button>
+                  <button data-value="-price"
+                    class="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-50">Price, high to low</button>
+                  <!-- <button data-value="-created_at" class="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-50">Oldest</button> -->
+              </div>
+            </div>
           </div>
-          <button id="applyFilter" class="mt-4 w-full bg-[#FF4000] text-white py-2 rounded-xl">Apply</button>
         </div>
       </div>
 
-      <div class="relative">
-        <button id="sortToggle" 
-          class="flex items-center space-x-2 px-3 py-2 rounded-md text-gray-700 hover:text-black">
-          <span>Sort by</span>
-          <span class="transform transition-transform duration-200" id="sortArrow"><svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M0.21967 0.71967C0.512563 0.426777 0.987437 0.426777 1.28033 0.71967L5 4.43934L8.71967 0.719671C9.01256 0.426777 9.48744 0.426777 9.78033 0.719671C10.0732 1.01256 10.0732 1.48744 9.78033 1.78033L5.53033 6.03033C5.38968 6.17098 5.19891 6.25 5 6.25C4.80109 6.25 4.61032 6.17098 4.46967 6.03033L0.21967 1.78033C-0.0732233 1.48744 -0.0732233 1.01256 0.21967 0.71967Z" fill="#10151F"/>
-          </svg>
-          </span>
-        </button>
-
-        <div id="sortMenu" 
-          class="hidden absolute right-0 mt-2 w-44 bg-white rounded-xl shadow-lg z-20">
-          <h4 class="block w-full text-left px-4 py-2 font-bold">Sort by</h1>
-          <button data-value="created_at" class="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-50">New product first</button>
-          <button data-value="price" class="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-50">Price, low to high</button>
-          <button data-value="-price" class="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-50">Price, high to low</button>
-          <!-- <button data-value="-created_at" class="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-50">Oldest</button> -->
-        </div>
+      <div class="flex justify-between items-center mb-6">
+        <div id="activeFilters" class="flex space-x-2"></div>
       </div>
-    </div>
-  </div>
-</div>
-
-<div class="flex justify-between items-center mb-6">
-  <div id="activeFilters" class="flex space-x-2"></div>
-</div>
 
       <div id="productGrid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8"></div>
 
